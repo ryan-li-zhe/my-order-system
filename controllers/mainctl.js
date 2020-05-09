@@ -9,6 +9,7 @@ exports.showIndex = function(req, res){
     res.render("index");
 };
 
+
 exports.saveAnOrderToDB = function(req, res){
     console.log("send order to db");
     db.saveToDB(req, res, function(data){
