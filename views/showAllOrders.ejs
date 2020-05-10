@@ -46,8 +46,40 @@
           <% } %>
       </table>
     </div>
+
+    <div class="table-responsive" hidden="hidden">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Cell Number</th>
+            <th>Delivery Method</th>
+            <th>Dishes</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
     <div class="forwardTo">
     <p><a href="/">Go Home Page</a></p>
     </div>
+
+    <script type="text/javascript" src="/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    /***
+      $.get("/orders", function(data){
+        alert(JSON.stringify(orders));
+        $.each(data, function(i, n){
+          $tr = $("<tr></tr>");
+          $("<td></td>").html(n.cellNumber).appendTo($tr);
+          $("<td></td>").html(n.cellNumber).appendTo($tr);
+          $("<td></td>").html(n.cellNumber).appendTo($tr);
+          $tr.appendTo($("#tbody"));
+        });
+      });
+    */
+    </script>
   </body>
 </html>

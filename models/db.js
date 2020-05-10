@@ -59,7 +59,8 @@ exports.saveToDB = function(req, res, callback){
         var zheLi = new Order({
             cellNumber : cellNumber,
             delivery : delivery,
-            dishes   : JSON.stringify(dishes)
+            // dishes   : JSON.stringify(dishes)
+            dishes   : dishes
         });
         // persist
         zheLi.save(function(err){

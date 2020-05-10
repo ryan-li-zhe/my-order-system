@@ -1,1 +1,0 @@
-{"cellNumber":"6472831822","delivery":"takeOut","dishes":"[\"salad\"]"}

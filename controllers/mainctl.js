@@ -32,7 +32,7 @@ exports.showAllOrders = function(req, res){
         // console.log(data);
         res.render("showAllOrders", {
             "orders" : data
-        });        
+        });      
     });
 }
 
